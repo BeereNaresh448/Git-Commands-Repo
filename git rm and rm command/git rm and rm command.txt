@@ -1,0 +1,43 @@
+git rm and rm command:
+=====================
+==> To delete a file rm commad used, its a linux command.
+==> To delete a file from staging area we use git rm command, Its git command.
+
+NOTE:
+====
+ls command --> Shows files in Working Directory.
+git ls-files command ---> Shows files in Staging Area.
+
+Example: 
+$ touch test1.txt  test2.txt  test3.txt
+-> Add and commited those files.
+$ ls //Files are in Working Directory.
+test1.txt  test2.txt  test3.txt
+$ git ls-files // Files are Stating Area
+test1.txt
+test2.txt
+test3.txt
+$ git log --oneline // Commited in Local Repo
+35cc36b (HEAD -> main) test1.txt test2.txt test3.txt files are added
+
+Now using rm command:
+=====================
+$ rm test1.txt // removed test1.txt  in Working Directory.
+$ ls 
+test2.txt  test3.txt
+$ git ls-files // Not removed in Staging Area
+test1.txt
+test2.txt
+test3.txt
+
+Now using gitrm command:
+========================
+$ git rm test1.txt // remove test1.txt file in Staging Area.
+rm 'raj/test1.txt'
+$ ls
+test2.txt  test3.txt
+$ git ls-files  // Removed in Staging Area.
+test2.txt
+test3.txt
+
+
