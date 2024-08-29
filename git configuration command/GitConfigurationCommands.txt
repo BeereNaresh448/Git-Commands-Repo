@@ -1,0 +1,59 @@
+Git Configuration Commands:
+===========================
+Git configuration can be done in Local/Project, Global/UserAccount and 
+System Level (Git Software Installation)
+
+
+Project/Local Level config Commands:
+------------------------------------
+To display the local config list: $git config --local --list
+
+Display username :    $git config --local user.name
+Display useremail:    $git config --local user.email
+
+To Set New username :  $git config --local user.name newusername
+To Set New useremail:  $git config --local user.name newuseremail
+
+To remove username  :  $git config --local --unset user.name
+To remove useremail :  $git config --local --unset user.email
+
+To remove entire user section at local level config:
+
+$git config --local --remove-section user
+
+
+Global/UserAccount Level config Commands:
+-----------------------------------------
+To display the global config list: $git config --global --list
+
+Display username :    $git config --global user.name
+Display useremail:    $git config --global user.email
+
+To Set New username :  $git config --global user.name newusername
+To Set New useremail:  $git config --global user.name newuseremail
+
+To remove username  :  $git config --global --unset user.name
+To remove useremail :  $git config --global --unset user.email
+
+To remove entire user section at global level config:
+
+$git config --global --remove-section user
+
+
+System Level config Commands:
+------------------------------
+To display the system config list: $git config --system --list
+
+Display username :    $git config --system user.name
+Display useremail:    $git config --system user.email
+
+To Set New username :  $git config --system user.name newusername
+To Set New useremail:  $git config --system user.name newuseremail
+
+To remove username  :  $git config --system --unset user.name
+To remove useremail :  $git config --system --unset user.email
+
+To remove entire user section at system level config:
+
+$git config --system --remove-section user
+
